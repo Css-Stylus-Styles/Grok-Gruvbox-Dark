@@ -20,7 +20,7 @@
 
 
 @var select newfont 'Text Font' [
-        'File', 
+    'File', 
 	'Default',
 	'Geist Sans', 
 	'Test Tiempos Text',
@@ -880,26 +880,14 @@ font-family : "Tiempos Text Regular" !important
 
 
 
-// Hide SVGS 
+// Hide Grok Logo 
 // Front Page logo 
 if noLogo {
-#grok-app svg[viewBox="0 0 88 33"] {
-display: none !important;
+    div[class*="max-w-breakout"] > svg {
+      opacity: 0 !important;
+    }
 }
-}
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
+   
     
     
     
