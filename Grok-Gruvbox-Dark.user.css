@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grok-Gruvbox-Dark
 @namespace      github.com/bilalazhar/grok-dark-theme
-@version        1.0.0
+@version        1.0.1
 @description    A new userstyle
 @author         Me
 @preprocessor   stylus
@@ -11,6 +11,7 @@
 
 @var checkbox  noLogo   "No Front Page Logo"      1
 
+@var checkbox   noSideHeader "NO Logo Header (Sidebar)" 1 
 
 @var checkbox   LocalFont  "Local Placeholder Font"      1
 
@@ -860,7 +861,6 @@ p, li, ul, ol, button, input, textarea {
 if LocalFont {
 p , div , span , button , body , html , p , li , ul , ol  {
 font-family : "Test Tiempos Text" !important 
-
 }
 } 
 
@@ -889,10 +889,15 @@ if noLogo {
 }
    
     
-    
-    
-    
-    
+
+/* Hide the Side bar header */
+ 
+if noSideHeader{
+    div[data-sidebar="header"] {
+      display: none !important;
+    }   
+}
+
  
     
     
