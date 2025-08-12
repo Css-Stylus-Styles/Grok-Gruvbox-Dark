@@ -20,6 +20,7 @@
 
 
 @var select newfont 'Text Font' [
+        'File', 
 	'Default',
 	'Geist Sans', 
 	'Test Tiempos Text',
@@ -706,6 +707,8 @@ $sans-serif = Geist Sans
 
 
 
+
+
 .dark {
 --surface-l1: #3c3836 !important;
 --surface-base: #282828 !important;
@@ -834,7 +837,11 @@ font-size : 1rem !important ;
 
 
 
+h1, h2, h3, h4, h5, h6, 
+p, li, ul, ol, button, input, textarea {
 
+        font-family: var(--font-Jetbrains) !important;
+}
 
 
 
@@ -916,6 +923,7 @@ display: none !important;
  used when ever this script is ran*/
 :root {
   --dropdown-text-font:newfont ;
+  --fallback-text: sans-serif !important ; 
 }
 
 /* if the Setting is set to default then just use the defatult font 
@@ -924,13 +932,15 @@ and then you can also add more fallback fonts as well  */
 if newfont == 'Default' {
   :root { --dropdown-text-font: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
 }
+ 
+
 
 
 /*if some other font is selected then it will use it through out the UI */
 
 h1, h2, h3, h4, h5, h6, 
 p, li, ul, ol, button, input, textarea {
-  font-family: var(--dropdown-text-font), system-ui, -apple-system, Segoe UI, Roboto, sans-serif !important;
+  font-family: var(--dropdown-text-font), system-ui, -apple-system, var(--font-GeistSans) , var(--font-Archivo), sans-serif !important;
 }
 
 
