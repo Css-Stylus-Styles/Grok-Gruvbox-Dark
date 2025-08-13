@@ -28,3 +28,11 @@ The style automatically applies to grok.com domain.
 ## Screenshots
 
 <!-- Add screenshots here -->
+
+## Troubleshooting
+
+<!-- Add common issues and solutions here -->
+
+## FAQ
+
+<!-- Add frequently asked questions and answers here -->
