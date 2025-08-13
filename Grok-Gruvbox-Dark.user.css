@@ -18,12 +18,9 @@
 
 
 @var select newfont 'Text Font' [
+    'Test Tiempos Text',
     'Website Default',
-	'System-UI',
 	'Geist Sans',
-	'Test Tiempos Text',
-	'Harding Text Web Regular Regular',
-	'Bricolage Grotesque Variable',
 ]
 
 @var select headfont 'Heading Font' [
