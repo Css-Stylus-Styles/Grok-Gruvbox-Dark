@@ -24,3 +24,7 @@ A dark theme userstyle for grok.com with Gruvbox-inspired colors and customizabl
 - Font loading options (local or web)
 
 The style automatically applies to grok.com domain.
+
+## Screenshots
+
+<!-- Add screenshots here -->
