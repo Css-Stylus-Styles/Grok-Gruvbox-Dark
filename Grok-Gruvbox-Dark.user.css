@@ -271,19 +271,6 @@ unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U
           url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.ttf")format("truetype"),
           url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.svg#Karla Bold")format("svg");
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
   /*Archivo Font */
   @font-face {
           font-family: "Archivo";
@@ -294,12 +281,6 @@ unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U
           url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.ttf")format("truetype"),
           url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.svg#Archivo")format("svg");
   }
-
-
-
-
-
-
 /* literata-latin-wght-normal */
 @font-face {
 font-family: 'Literata Variable';
@@ -309,11 +290,6 @@ font-weight: 200 900;
 src: url(https://cdn.jsdelivr.net/fontsource/fonts/literata:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
 unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
-
-
-
-
-
 
 @font-face {
 font-family: "Fantasque Sans Mono";
@@ -325,9 +301,6 @@ url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.ttf")forma
 url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.svg#Fantasque Sans Mono")format("svg");
 }
 
-
-
-
 @font-face {
 font-family: "Fantasque Sans Mono Bold";
 src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot");
@@ -337,9 +310,6 @@ url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff")form
 url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.ttf")format("truetype"),
 url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.svg#Fantasque Sans Mono Bold")format("svg");
 }
-
-
-
 
   /* jetbrains-mono-latin-wght-normal */
 @font-face {
@@ -351,8 +321,6 @@ src: url(https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono:vf@latest/lati
 unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
-
-
   /* inclusive-sans-latin-400-normal */
 @font-face {
 font-family: 'Inclusive Sans';
@@ -362,9 +330,6 @@ font-weight: 400;
 src: url(https://cdn.jsdelivr.net/fontsource/fonts/inclusive-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/inclusive-sans@latest/latin-400-normal.woff) format('woff');
 unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
-
-
-
   /* manrope-latin-wght-normal */
 @font-face {
 font-family: 'Manrope Variable';
@@ -374,16 +339,6 @@ font-weight: 200 800;
 src: url(https://cdn.jsdelivr.net/fontsource/fonts/manrope:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
 unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
-
-
-
-
-
-
-
-
-
-
 
 /*Geist Sans*/
 /* geist-sans-latin-100-normal */
@@ -710,117 +665,6 @@ $code-font = Geist Mono
 
 
 
-.dark {
---surface-l1: #3c3836 !important;
---surface-base: #282828 !important;
---surface-l3: #504945 !important;
---surface-l4: #665c54 !important;
---surface-l4-hover: #7c6f64 !important;
---surface-invert: #fbf1c7 !important;
---overlay: #00000080 !important;
---button-filled: #fbf1c7 !important;
---button-filled-hover: #ebdbb2 !important;
---button-filled-active: #d5c4a1 !important;
---button-ghost-hover: #ffffff14 !important;
---button-ghost-active: #ffffff1a !important;
---border-l1: #ffffff0f !important;
---border-l2: #ffffff1a !important;
---border-l3: #ffffff33 !important;
---ring: #928374 !important;
---fg-primary: #ebdbb2 !important;
---fg-secondary: #d5c4a1 !important;
---fg-tertiary: #bdae93 !important;
---fg-invert: #1d2021 !important;
---fg-danger: #fb4934 !important;
---fg-positive: #8ec07c !important;
---input-background: #313234 !important;
---input-background-hover: #36383a !important;
---input-button-background: #313234 !important;
---input-button-background-hover: #424446 !important;
---input-button-background-selected: #626365 !important;
---input-button-border: #444446 !important;
---input-button-border-hover: #707172 !important;
---incognito-input-background: #222329 !important;
---incognito-input-background-hover: #26252e !important;
---incognito-input-button-background: #222329 !important;
---incognito-input-button-background-hover: #33333b !important;
---incognito-input-button-background-selected: #5a5a61 !important;
---incognito-input-button-border: #36373c !important;
---incognito-input-button-border-hover: #66666a !important;
---background: #1d2021 !important;
---background-secondary: #282828 !important;
---foreground: #ebdbb214 !important;
---highlight: #bdae934d !important;
---gradient: #bdae931a !important;
---gradient-bg: #32302f !important;
---important: #ebdbb2 !important;
---important-hover: #d5c4a1 !important;
---button-primary: #fbf1c7e6 !important;
---button-primary-hover: #fbf1c7 !important;
---button-secondary: #ebdbb21f !important;
---button-secondary-hover: #ebdbb233 !important;
---button-secondary-selected: #ebdbb24d !important;
---button-text-hover: #ebdbb214 !important;
---button-outline-border: #ebdbb214 !important;
---input: #ebdbb2 !important;
---input-glow: #bdae9333 !important;
---input-border: #ebdbb20a !important;
---input-hover: #ebdbb2 !important;
---input-border-focus: #ffffff29 !important;
---input-foreground-hover: #d5c4a1 !important;
---toggle-border: #ffffff17 !important;
---toggle-hover: #ffffff0f !important;
---toggle-selected: #ffffff3d !important;
---toggle-disabled: #ffffff14 !important;
---popover: #3c3836 !important;
---popover-border: #ffffff0a !important;
---popover-hover: #ffffff0a !important;
---card: #ffffff14 !important;
---card-hover: #ffffff0f !important;
---card-focus: #ffffff24 !important;
---card-border: #ffffff0a !important;
---card-border-focus: #ffffff0a !important;
---chip: #ffffff0d !important;
---link: #83a598 !important;
---link-hover: #458588 !important;
---primary: #fbf1c7 !important;
---secondary: #bdae93 !important;
---incognito: #504945 !important;
---input-incognito: #ffffff0a !important;
---input-glow-incognito: #ffffff40 !important;
---input-border-incognito: #ffffff59 !important;
---input-hover-incognito: #ffffff12 !important;
---input-border-focus-incognito: #ffffff8c !important;
---border-incognito: #504945 !important;
---ring-incognito: #504945 !important;
---card-foreground: 0 0% 98% !important;
---popover-foreground: 0 0% 98% !important;
---primary-foreground: 0 0% 9% !important;
---secondary-foreground: 0 0% 98% !important;
---muted: 0 0% 14.9% !important;
---muted-foreground: 0 0% 63.9% !important;
---accent: 240 4% 16% !important;
---accent-foreground: 0 0% 98% !important;
---destructive: 0 62.8% 30.6% !important;
---destructive-foreground: 0 0% 98% !important;
---border: 0 0% 14.9% !important;
---chart-1: 220 70% 50% !important;
---chart-2: 160 60% 45% !important;
---chart-3: 30 80% 55% !important;
---chart-4: 280 65% 60% !important;
---chart-5: 340 75% 55% !important;
---sidebar-foreground: 240 4.8% 95.9% !important;
---sidebar-primary: 224.3 76.3% 48% !important;
---sidebar-primary-foreground: 0 0% 100% !important;
---sidebar-accent: 240 5% 26% !important;
---sidebar-accent-foreground: 240 4.8% 95.9% !important;
---sidebar-border: 240 3.7% 15.9% !important;
---sidebar-ring: 217.2 91.2% 59.8% !important;
-}
-
-
-
-
 
 /* Html and body tags  */
 html , body {
@@ -852,12 +696,40 @@ font-size : 1rem !important ;
 
 
 
+/* General Styles */
+/* Colors and other styling options for General Html tags  */
+
+p {
+  color : var(--text-white) !important;
+  font-size: 1rem !important;
+}
+
+li, ol, ul {
+  color : var(--text-offwhite) !important;
+  font-size: 1rem !important;
+}
 
 
+strong {
+  color : var(--faded-green) !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+}
 
+/* Heading 1  will get a diff color  */
+h1 {
+  color : var(--faded-red) !important;
+}
 
+/* heading 2 and 3  will get a diff color */
+h2 , h3 {
+  color : var(--faded-blue) !important;
+}
 
-
+/* heading 4 to 6 will get a diff color */
+h4 , h5 , h6 {
+  color : var(--light-dim-yellow) !important;
+}
 
 
 
