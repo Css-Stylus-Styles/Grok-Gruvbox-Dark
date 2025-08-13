@@ -10,25 +10,25 @@
 
 
 @var checkbox  noLogo   "No Front Page Logo"             1
-@var checkbox   noSideHeader "NO Logo Header (Sidebar)"  1 
-@var checkbox   noPrivateChat "No Private Chat"          1 
-@var checkbox   LocalFont  "Local Placeholder Font"      1
-@var checkbox   LoadWebFont  "Load Font From Web"        1
+@var checkbox   noSideHeader "NO Logo Header (Sidebar)"  1
+@var checkbox   noPrivateChat "No Private Chat"          1
+@var checkbox   LocalFont  "Local Placeholder Font"      0
+@var checkbox   LoadWebFont  "Load Font From Web"        0
 
 
 
 @var select newfont 'Text Font' [
-    'File', 
-	'Default',
-	'Geist Sans', 
+    'Website Default',
+	'System-UI',
+	'Geist Sans',
 	'Test Tiempos Text',
 ]
 
 ==/UserStyle== */
 @-moz-document domain("grok.com") {
-    
-    
-    
+
+
+
       @import url('https://c.webfontfree.com/c.js?f=HardingTextWeb-Regular');
 @import url(https://db.onlinewebfonts.com/c/7732caef9ed946f7916b3f650e8837c2?family=Harding+Text+Web+Regular+Regular);
 
@@ -159,7 +159,7 @@ unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U
           font-display: auto;
           font-weight: 400;
           src: url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.ttf) format('truetype');
-          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;  
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
 
@@ -177,7 +177,7 @@ unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U
           font-display: auto;
           font-weight: 300 700;
           src: url(https://cdn.jsdelivr.net/fontsource/fonts/spline-sans:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;  
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
 
@@ -639,23 +639,23 @@ higher values for hard  */
 
 
 
---dark-red: #9d0006;   
---dark-green: #79740e; 
---dark-yellow: #b57614; 
---dark-blue: #076678; 
---dark-purple: #8f3f71; 
---dark-aqua: #427b58;   
+--dark-red: #9d0006;
+--dark-green: #79740e;
+--dark-yellow: #b57614;
+--dark-blue: #076678;
+--dark-purple: #8f3f71;
+--dark-aqua: #427b58;
 --dark-orange: #af3a03;
 
 
 /* light colors */
---interface-light0-hard: #f9f5d7; 
+--interface-light0-hard: #f9f5d7;
 --interface-light0: #fbf1c7;
 --interface-light0-soft: #f2e5bc;
 --interface-light1: #ebdbb2;
 --interface-light2: #d5c4a1;
 --interface-light3: #bdae93;
---interface-light4: #a89988; 
+--interface-light4: #a89988;
 
 
 
@@ -665,7 +665,7 @@ higher values for hard  */
 
 
 
-/*Root Fonts */ 
+/*Root Fonts */
 
 :root {
 --font-Margon: "Margon 360 W08 Medium";
@@ -698,10 +698,10 @@ higher values for hard  */
 
 
 
-/* Putting Variables for the most used fonts */ 
-$heading-font = Bricolage Grotesque Variable 
+/* Putting Variables for the most used fonts */
+$heading-font = Bricolage Grotesque Variable
 $sans-serif = Geist Sans
-
+$code-font = Geist Mono
 
 
 
@@ -821,12 +821,27 @@ $sans-serif = Geist Sans
 
 /* Html and body tags  */
 html , body {
-background : var(--bg-dark-new) !important ; 
+background : var(--bg-dark-new) !important ;
 }
 
 
+/* FRONT PAGE  */
+
+div.query-bar {
+  background-color: var(--bg-dark-new) !important;
+  border: 3px solid var(--bg3-dark) !important;
+  border-radius: 9px !important;
+  box-shadow: 5px 5px 5px var(--bg-dark) !important;
+}
+
+/* text area styles */
 textarea {
-font-size : 1rem !important ; 
+font-size : 1rem !important ;
+}
+
+textarea::placeholder {
+    font-family:  'Times New Roman' !important;
+font-size : 1rem !important ;
 }
 
 
@@ -835,11 +850,6 @@ font-size : 1rem !important ;
 
 
 
-h1, h2, h3, h4, h5, h6, 
-p, li, ul, ol, button, input, textarea {
-
-        font-family: var(--font-Jetbrains) !important;
-}
 
 
 
@@ -850,63 +860,59 @@ p, li, ul, ol, button, input, textarea {
 
 
 
-
-
-
-
-// Loading Local Font For Everything 
+// Loading Local Font For Everything
 if LocalFont {
 p , div , span , button , body , html , p , li , ul , ol  {
-font-family : "Test Tiempos Text" !important 
+font-family : "Test Tiempos Text" !important
 }
-} 
+}
 
 
 
 
 /*
-Loading Fonts from the web for  this  
+Loading Fonts from the web for  this
 */
 if  LoadWebFont {
 p , div , span , button , body , html , p , li , ul , ol  {
-font-family : "Tiempos Text Regular" !important 
+font-family : "Tiempos Text Regular" !important
 
 }
-} 
+}
 
 
 
 
-// Hide Grok Logo 
-// Front Page logo 
+// Hide Grok Logo
+// Front Page logo
 if noLogo {
     div[class*="max-w-breakout"] > svg {
       opacity: 0 !important;
     }
 }
-   
-    
+
+
 
 /* Hide the Side bar header */
- 
+
 if noSideHeader{
     div[data-sidebar="header"] {
       display: none !important;
-    }   
+    }
 }
 
- 
+
     /*Hide Private Chat button   */
     /*This will still be available in Command Pallete   */
- 
-    
+
+
     if noPrivateChat{
     [href="/chat#private"] {
    display: none !important;
- }   
+ }
     }
-    
-    
+
+
 /* ============================== */
 /* Demo: how to use `newfont` var */
 /* ============================== */
@@ -915,30 +921,69 @@ if noSideHeader{
  1) Define a reusable CSS variable from the Stylus usercss token /*[[newfont]]*/
 
 
- /*This was defined in the start of the style , basically this variable will be 
+ /*This was defined in the start of the style , basically this variable will be
  used when ever this script is ran*/
 :root {
   --dropdown-text-font:newfont ;
-  --fallback-text: sans-serif !important ; 
+  --fallback-text: code-font !important ;
 }
 
-/* if the Setting is set to default then just use the defatult font 
-in Css terms  its system-ui , -apple-system for apple fonts 
+/* if the Setting is set to default then just use the defatult font
+in Css terms  its system-ui , -apple-system for apple fonts
 and then you can also add more fallback fonts as well  */
-if newfont == 'Default' {
-  :root { --dropdown-text-font: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
-}
- 
 
+
+/* 
+if newfont == 'Website Default' {
+  :root { --fallback-text: sans-serif; }
+}
+ */
+
+
+       /* This block has syntax errors */
+       /* if newfont == 'Website Default' {
+           :root{
+               p, li, ul, ol, button, input, textarea {
+                        font-family: --fallback-text: sans-serif !important ;
+                        font-size : 3rem !important; 
+               }
+           }
+       }
+ */
 
 
 /*if some other font is selected then it will use it through out the UI */
+if newfont != 'Website Default' {
 
-h1, h2, h3, h4, h5, h6, 
-p, li, ul, ol, button, input, textarea {
-  font-family: var(--dropdown-text-font), system-ui, -apple-system, var(--font-GeistSans) , var(--font-Archivo), sans-serif !important;
+    /* This rule applies the font selected from the dropdown menu */
+    /* h1, h2, h3, h4, h5, h6,
+    p, li, ul, ol, button, input, textarea {
+      font-family:  var(--dropdown-text-font), system-ui, -apple-system, var(--font-GeistSans) , var(--font-Archivo), sans-serif !important;
+    }
+    else {
+    :root{
+                   p, li, ul, ol, button, input, textarea {
+                            font-family: --fallback-text , sans-serif !important ;
+                            font-size : 3rem !important; 
+                   }
+    }
+
 }
+ */
 
+                    if newfont != 'Website Default' {
+               h1, h2, h3, h4, h5, h6,
+               p, li, ul, ol, button, input, textarea {
+                 font-family: var(--dropdown-text-font), system-ui, -apple-system, var(--font-GeistSans), var(--font-Archivo), sans-serif !important;
+               }
+             } else {
+               :root {
+                 p, li, ul, ol, button, input, textarea {
+                   font-family: var(--fallback-text, sans-serif) !important;
+                 }
+               }
+             }
 
-
+ 
+ 
 }
