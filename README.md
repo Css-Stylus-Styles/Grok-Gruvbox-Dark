@@ -10,8 +10,13 @@ A dark theme userstyle for grok.com with Gruvbox-inspired colors and customizabl
 
 - Dark theme with Gruvbox color palette
 - Customizable fonts for text and headings:
-  - Text Font: Choose from various serif and sans-serif fonts
-  - Heading Font: Select a specific font for headings or inherit text font
+  - **Text Font:** Choose from: 'Test Tiempos Text', 'Website Default', 'Geist Sans'
+  - **Heading Font:** Choose from: 'Inherit', 'Bricolage Grotesque Variable'
+- Options to hide site elements:
+  - **No Front Page Logo:** Hides the Grok logo on the front page.
+  - **NO Logo Header (Sidebar):** Hides the logo in the sidebar header.
+  - **No Private Chat:** Hides the private chat button (still accessible via Command Palette).
+- Font loading options (local or web)
 - Options to hide site elements:
   - Front page logo
   - Sidebar header
