@@ -950,7 +950,6 @@ if newfont == 'Website Default' {
 
 
 /*if some other font is selected then it will use it through out the UI */
-if newfont != 'Website Default' {
 
     /* This rule applies the font selected from the dropdown menu */
     /* h1, h2, h3, h4, h5, h6,
@@ -985,4 +984,3 @@ if newfont != 'Website Default' {
  
 }
 
-}
