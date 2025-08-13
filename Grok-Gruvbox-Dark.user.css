@@ -22,7 +22,16 @@
 	'System-UI',
 	'Geist Sans',
 	'Test Tiempos Text',
+	'Harding Text Web Regular Regular',
+	'Bricolage Grotesque Variable',
 ]
+
+@var select headfont 'Heading Font' [
+  'Inherit',
+  'Bricolage Grotesque Variable',
+
+]
+
 
 ==/UserStyle== */
 @-moz-document domain("grok.com") {
@@ -856,7 +865,6 @@ font-size : 1rem !important ;
 
 
 
-
 // Loading Local Font For Everything
 if LocalFont {
 p , div , span , button , body , html , p , li , ul , ol  {
@@ -910,77 +918,64 @@ if noSideHeader{
     }
 
 
-/* ============================== */
-/* Demo: how to use `newfont` var */
-/* ============================== */
-/*
- This demo shows two pieces:
- 1) Define a reusable CSS variable from the Stylus usercss token /*[[newfont]]*/
+
+
+/* Heading Font Selector  */
+
+/* When you select  the heading font it will use Bricoalge Grotesque Font and put that in headfont variable  */
+/* if you select inherit then it will use the default font and just make it bold and appear as heading  */
+
+/* new font in else was defined in the function down below based on the text font drop down  */
+:root{
+  --default-heading-font: headfont ; 
+}
+
+if headfont != 'Inherit' {
+  h1 , h2 , h3 , h4 , h5 , h6 {
+    font-family: var(--default-heading-font), system-ui, -apple-system, sans-serif !important;
+  }
+} else {
+  h1 , h2 , h3 , h4 , h5 , h6 {
+    font-family: newfont, sans-serif !important;
+  }
+}
+
+
+
 
 
  /*This was defined in the start of the style , basically this variable will be
  used when ever this script is ran*/
 :root {
   --dropdown-text-font:newfont ;
-  --fallback-text: code-font !important ;
+  --fallback-text: sans-serif !important ;
 }
 
-/* if the Setting is set to default then just use the defatult font
-in Css terms  its system-ui , -apple-system for apple fonts
-and then you can also add more fallback fonts as well  */
 
-
-/* 
-if newfont == 'Website Default' {
-  :root { --fallback-text: sans-serif; }
-}
- */
-
-
-       /* This block has syntax errors */
-       /* if newfont == 'Website Default' {
-           :root{
-               p, li, ul, ol, button, input, textarea {
-                        font-family: --fallback-text: sans-serif !important ;
-                        font-size : 3rem !important; 
-               }
-           }
-       }
- */
+/* This fallback font is defined above in the start of the style
+but here is what it is in human readable words
+It will first try to use the default font of the system
+if the system is apple then it will use apple system font
+and if none of the above is available then it will use sans-serif as a fallback */
 
 
 /*if some other font is selected then it will use it through out the UI */
-
-    /* This rule applies the font selected from the dropdown menu */
-    /* h1, h2, h3, h4, h5, h6,
-    p, li, ul, ol, button, input, textarea {
-      font-family:  var(--dropdown-text-font), system-ui, -apple-system, var(--font-GeistSans) , var(--font-Archivo), sans-serif !important;
+if newfont != 'Website Default' {
+  p, li, ul, ol, button, input, textarea , strong{
+    font-family: var(--dropdown-text-font), system-ui, -apple-system, var(--font-GeistSans), var(--font-Archivo), sans-serif !important;
+  }
+} else {
+  :root {
+    p, li, ul, ol, button, input, textarea , strong{
+      font-family: var(--fallback-text) !important;
     }
-    else {
-    :root{
-                   p, li, ul, ol, button, input, textarea {
-                            font-family: --fallback-text , sans-serif !important ;
-                            font-size : 3rem !important; 
-                   }
-    }
-
+  }
 }
- */
 
-                    if newfont != 'Website Default' {
-               h1, h2, h3, h4, h5, h6,
-               p, li, ul, ol, button, input, textarea {
-                 font-family: var(--dropdown-text-font), system-ui, -apple-system, var(--font-GeistSans), var(--font-Archivo), sans-serif !important;
-               }
-             } else {
-               :root {
-                 p, li, ul, ol, button, input, textarea {
-                   font-family: var(--fallback-text, sans-serif) !important;
-                 }
-               }
-             }
 
- 
+
+
+
  
 }
 
