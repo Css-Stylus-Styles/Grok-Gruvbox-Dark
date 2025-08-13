@@ -657,7 +657,7 @@ higher values for hard  */
 
 
 /* Putting Variables for the most used fonts */
-$heading-font = Bricolage Grotesque Variable
+$heading-font = Bricoalge Grotesque Variable 
 $sans-serif = Geist Sans
 $code-font = Geist Mono
 
@@ -683,15 +683,20 @@ div.query-bar {
 
 /* text area styles */
 textarea {
-font-size : 1rem !important ;
-}
-
-textarea::placeholder {
-    font-family:  'Times New Roman' !important;
-font-size : 1rem !important ;
+color: var(--text-offyellowish) !important;
+font-family:  'Geist Sans' !important;
+font-weight: 500 !important;
 }
 
 
+
+.relative > span {
+color: var(--bg3-dark) !important;
+font-family: newfont !important;
+font-stretch : 92% !important;
+font-size: 16px !important;
+font-weight: 500!important;
+}
 
 
 
@@ -734,13 +739,22 @@ h4 , h5 , h6 {
 
 
 
+
+
+
+
+
+
+
+
+
+
 // Loading Local Font For Everything
 if LocalFont {
 p , div , span , button , body , html , p , li , ul , ol  {
 font-family : "Test Tiempos Text" !important
 }
 }
-
 
 
 
@@ -756,7 +770,6 @@ font-family : "Tiempos Text Regular" !important
 
 
 
-
 // Hide Grok Logo
 // Front Page logo
 if noLogo {
@@ -765,10 +778,7 @@ if noLogo {
     }
 }
 
-
-
 /* Hide the Side bar header */
-
 if noSideHeader{
     div[data-sidebar="header"] {
       display: none !important;
@@ -778,8 +788,6 @@ if noSideHeader{
 
     /*Hide Private Chat button   */
     /*This will still be available in Command Pallete   */
-
-
     if noPrivateChat{
     [href="/chat#private"] {
    display: none !important;
