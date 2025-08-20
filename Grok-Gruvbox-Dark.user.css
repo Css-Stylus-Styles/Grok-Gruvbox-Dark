@@ -689,7 +689,7 @@ font-weight: 500 !important;
 }
 
 
-
+/* Text Area Span  */
 .relative > span {
 color: var(--bg3-dark) !important;
 font-family: newfont !important;
@@ -714,7 +714,7 @@ li, ol, ul {
   font-size: 1rem !important;
 }
 
-
+/* Bold and strong formatting  */
 strong {
   color : var(--faded-green) !important;
   font-size: 1rem !important;
