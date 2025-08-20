@@ -725,7 +725,8 @@ h4 , h5 , h6 {
 
 /* SVG colors  */
 svg  {
-  color: var(--faded-aqua) !important; 
+  color: var(--faded-green) !important; 
+  stroke-width: 3px !important; 
 }
 
 
@@ -733,6 +734,10 @@ svg  {
 /* First Page Styles */
 
 
+/* Side bar  */
+span.space-x-1.align-baseline > span {
+  color: var(--text--veryfade) !important;
+}
 
 
 
