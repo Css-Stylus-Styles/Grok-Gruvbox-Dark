@@ -35,20 +35,6 @@
 
 
 
-      @import url('https://c.webfontfree.com/c.js?f=HardingTextWeb-Regular');
-@import url(https://db.onlinewebfonts.com/c/7732caef9ed946f7916b3f650e8837c2?family=Harding+Text+Web+Regular+Regular);
-
-
-  @font-face {
-font-family: "Harding Text Web Regular Regular";
-src: url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.eot");
-src: url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.eot?#iefix")format("embedded-opentype"),
-url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.woff2")format("woff2"),
-url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.woff")format("woff"),
-url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.ttf")format("truetype"),
-url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.svg#Harding Text Web Regular Regular")format("svg");
-}
-
 
 
 
@@ -737,11 +723,14 @@ h4 , h5 , h6 {
 }
 
 
+/* SVG colors  */
+svg  {
+  color: var(--faded-aqua) !important; 
+}
 
 
 
-
-
+/* First Page Styles */
 
 
 
@@ -850,9 +839,6 @@ if newfont != 'Website Default' {
 }
 
 
-
-
-
- 
 }
+
 
