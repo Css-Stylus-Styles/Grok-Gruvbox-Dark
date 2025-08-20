@@ -734,13 +734,19 @@ svg  {
 /* First Page Styles */
 
 
-/* Side bar  */
+/* Side bar styles */
+/* Side bar  SEARCH and Contorl K  */
 span.space-x-1.align-baseline > span {
   color: var(--text--veryfade) !important;
 }
 
 
+/* Chat History and other headings  */
 
+.\[\&\>span\:last-child\]\:truncate>span:last-child{
+  color : var(--light-aqua) !important ; 
+
+}
 
 
 // Loading Local Font For Everything
