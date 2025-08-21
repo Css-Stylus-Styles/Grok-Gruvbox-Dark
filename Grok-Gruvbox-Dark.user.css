@@ -494,6 +494,8 @@ higher values for hard  */
 --text-normal :#ffd29c ;
 
 --shadow-bg:         #1d1b1a;
+/* Was picked from the side bar on grok interface  */
+--bg-def-dark:#171718; 
 
 --bg1-dark:       #3c3836;
 --bg-dark:        #282828;
@@ -652,7 +654,7 @@ $code-font = Geist Mono
 
 /* Html and body tags  */
 html , body {
-background : var(--shadow-var1)  !important ;
+background : #171718  !important ;
 }
 
 
