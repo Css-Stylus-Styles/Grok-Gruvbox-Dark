@@ -693,6 +693,8 @@ li, ol, ul {
   font-size: 1rem !important;
 }
 
+
+
 /* Bold and strong formatting  */
 strong {
   color : var(--faded-green) !important;
@@ -783,15 +785,29 @@ textarea {
 
 
 
+/* CHAT /ANSWER WINDOW */
 
 
 
+/* citation button */
+button.citation > button {
+  background-color: var(--bg-dark-new) !important;
+  color: var(--faded-green) !important;
+  padding : 0.5rem 0.5rem !important ; 
+  border: solid 1px var(--bg2-dark) !important;
+  font-size: 0.79rem !important;
+  font-style:normal !important;
 
-
-
-
-
-
+  &:hover {
+    background-color: var(--bg-def-dark) !important;
+    color: var(--text-offwhite-faded) !important;
+    font-style:italic !important;
+    padding: 0.65rem 0.6rem !important;
+    font-size: 0.83rem !important;
+    border: solid 0.3em var(--dark-green) !important ; 
+   transition: padding 0.3s ease-in !important; 
+  }
+}
 
 
 
