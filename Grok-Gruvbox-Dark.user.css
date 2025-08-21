@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grok-Gruvbox-Dark
 @namespace      github.com/bilalazhar/grok-dark-theme
-@version        1.0.1
+@version        1.0.2
 @description    A new userstyle
 @author         Me
 @preprocessor   stylus
@@ -741,15 +741,28 @@ span.space-x-1.align-baseline > span {
 }
 
 
-/* Chat History and other headings  */
+/* Chat History Titles color   */
+span.flex-1{
+color : var(--text--faded) !important; 
+font-size: 0.9rem !important;
+}
 
-.\[\&\>span\:last-child\]\:truncate>span:last-child{
-  color : var(--light-aqua) !important ; 
-
+/* Side elements other then the older chat history  */
+span {
+color : var(--bg_green) !important; 
+font-size: 0.9rem !important;
 }
 
 
-// Loading Local Font For Everything
+/* Circle for the chats that you have not opened yet (TASKS) */
+
+.bg-blue-400 {
+    background-color: var(--light-red) !important ;
+}
+
+
+
+/*Loading Local Font For Everything*/ 
 if LocalFont {
 p , div , span , button , body , html , p , li , ul , ol  {
 font-family : "Test Tiempos Text" !important
@@ -770,8 +783,9 @@ font-family : "Tiempos Text Regular" !important
 
 
 
-// Hide Grok Logo
-// Front Page logo
+
+/*Hide Grok Logo*/ 
+/*Front page Logo*/
 if noLogo {
     div[class*="max-w-breakout"] > svg {
       opacity: 0 !important;
@@ -851,5 +865,7 @@ if newfont != 'Website Default' {
 
 
 }
+
+
 
 
