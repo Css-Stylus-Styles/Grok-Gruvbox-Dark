@@ -23,6 +23,9 @@ A dark theme userstyle for grok.com with Gruvbox-inspired colors and customizabl
   - Private chat button
 - Font loading options (local or web)
 
+- General Styles applied 
+ - Side bar is better 
+
 The style automatically applies to grok.com domain.
 
 ## Screenshots
