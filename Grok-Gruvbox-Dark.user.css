@@ -788,6 +788,21 @@ textarea {
 /* CHAT /ANSWER WINDOW */
 
 
+/* user and Chat  bubble padding and background */
+
+div.message-bubble.rounded-3xl.text-primary.min-h-7{
+  background-color: var(--bg-def-dark) !important;
+  color: var(--text-white) !important;
+  border: 1px solid var(--bg-dark-new) !important;
+  border-radius: 1.5rem !important;
+  padding: 3px 6px !important;
+  box-shadow: 0 2px 5px var(--bg-def-dark) !important;
+
+  &:hover{
+    border: solid 0.23em var(--bg1-dark) !important ; 
+  }
+
+}
 
 /* citation button */
 button.citation > button {
