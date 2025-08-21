@@ -789,7 +789,6 @@ textarea {
 
 
 /* user and Chat  bubble padding and background */
-
 div.message-bubble.rounded-3xl.text-primary.min-h-7{
   background-color: var(--bg-def-dark) !important;
   color: var(--text-white) !important;
@@ -801,7 +800,6 @@ div.message-bubble.rounded-3xl.text-primary.min-h-7{
   &:hover{
     border: solid 0.23em var(--bg1-dark) !important ; 
   }
-
 }
 
 /* citation button */
