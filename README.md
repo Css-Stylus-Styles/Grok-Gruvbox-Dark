@@ -28,6 +28,11 @@ A dark theme userstyle for grok.com with Gruvbox-inspired colors and customizabl
 
 The style automatically applies to grok.com domain.
 
+
+### TODO : 
+- tables 
+- Change Code colors 
+
 ## Screenshots
 
 <!-- Add screenshots here -->
