@@ -31,6 +31,8 @@
 
 
 ==/UserStyle== */
+
+
 @-moz-document domain("grok.com") {
 
 
@@ -553,10 +555,6 @@ higher values for hard  */
 
 
 
-
-
-
-
 --bg_visual_light:      #eaedc8;
 --bg_red_light:         #fbe3da;
 --bg_green_light:       #f0f1d2;
@@ -654,7 +652,7 @@ $code-font = Geist Mono
 
 /* Html and body tags  */
 html , body {
-background : var(--bg-dark-new) !important ;
+background : var(--shadow-var1)  !important ;
 }
 
 
@@ -665,13 +663,6 @@ div.query-bar {
   border: 3px solid var(--bg3-dark) !important;
   border-radius: 9px !important;
   box-shadow: 5px 5px 5px var(--bg-dark) !important;
-}
-
-/* text area styles */
-textarea {
-color: var(--text-offyellowish) !important;
-font-family:  'Geist Sans' !important;
-font-weight: 500 !important;
 }
 
 
@@ -747,19 +738,67 @@ color : var(--text--faded) !important;
 font-size: 0.9rem !important;
 }
 
-/* Side elements other then the older chat history  */
-span {
-color : var(--bg_green) !important; 
-font-size: 0.9rem !important;
+/* Side elements other then the older chat history  
+CHAT HISTORY PROJECTS AND SO ON */
+.group.flex.flex-col.justify-center.rounded-full.focus\:outline-none.focus-visible\:outline-none.focus-visible\:ring-1.focus-visible\:ring-ring {
+
+  color :var(--text-white) !important ; 
+  font-size: 0.9rem !important;
+  
 }
+
 
 
 /* Circle for the chats that you have not opened yet (TASKS) */
 
 .bg-blue-400 {
-    background-color: var(--light-red) !important ;
+    background-color: var(--dim-red) !important ;
 }
 
+
+/* See all and Other secondary text on the Front page  */
+.text-secondary {
+  color: var(--dim-orange) !important ; 
+}
+
+
+/* text area styles */
+textarea {
+  color: var(--text-offyellowish) !important;
+  font-family:  'Geist Sans' !important;
+  font-weight: 500 !important;
+  }
+
+
+/* File */
+  div.absolute.bg-background.w-full.max-w-breakout.transition-opacity.opacity-100 > ul.pb-2.overflow-hidden.bg-background.min-h-36 > li {
+    color: var(--text-white) !important; 
+    border-radius: 0.75rem !important;
+    margin-bottom: 0.5rem !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ANSWER / CHAT  PAGE  */
+/* removing the top gradient  */
+.via-background {
+  --tw-gradient-to: none !important;
+  --tw-gradient-stops: none !important;
+}
 
 
 /*Loading Local Font For Everything*/ 
