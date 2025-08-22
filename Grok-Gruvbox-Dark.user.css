@@ -832,6 +832,39 @@ button.citation > button {
 }
 
 
+
+
+
+/* Code block inline in the Grok answer  */
+span.text-sm.px-1.rounded-sm{
+color : var(--faded-green) !important;
+font-family: $code-font !important ;
+background-color: var(--bg-dark-new) !important;
+border: solid 0.19em var(--dim-green) !important;
+padding: 0rem 0.45rem !important;
+border-radius: 0.25rem !important;
+font-size: 0.8rem !important;
+font-style: normal !important;
+font-weight : 700 !important;
+&:hover {
+  background-color: var(--bg-def-dark) !important;
+  color: var(--faded-green) !important;
+  padding: 0rem 0.45rem !important;
+  border: solid 0.12em var(--dark-green) !important ; 
+ transition: padding 0.3s ease-in !important; 
+}
+}
+
+
+
+
+
+
+
+
+
+
+
 /*Loading Local Font For Everything*/ 
 if LocalFont {
 p , div , span , button , body , html , p , li , ul , ol  {
