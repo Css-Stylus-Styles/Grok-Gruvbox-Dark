@@ -796,10 +796,6 @@ div.message-bubble.rounded-3xl.text-primary.min-h-7{
   border-radius: 1.5rem !important;
   padding: 3px 6px !important;
   box-shadow: 0 2px 5px var(--bg-def-dark) !important;
-
-  &:hover{
-    border: solid 0.23em var(--bg1-dark) !important ; 
-  }
 }
 
 /* citation button */
@@ -834,6 +830,7 @@ button.citation > button {
 
 
 
+/* Code Related Chaages  */
 
 /* Code block inline in the Grok answer  */
 span.text-sm.px-1.rounded-sm{
