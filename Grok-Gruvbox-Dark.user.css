@@ -727,6 +727,8 @@ code >span >span[style*="font-style: italic"] {
 
 
  
+ 
+ 
 /*
 Loading Fonts from the web for  this
 */
@@ -735,6 +737,9 @@ p , div , span , button , body , html , p , li , ul , ol  {
 font-family : "Tiempos Text Regular" !important
 }
 }
+
+
+
 
 /*Hide Grok Logo*/ 
 /*Front page Logo*/
@@ -750,6 +755,8 @@ if noSideHeader{
       display: none !important;
     }
 }
+
+
     /*Hide Private Chat button   */
     /*This will still be available in Command Pallete   */
     if noPrivateChat{
@@ -766,6 +773,7 @@ if noSideHeader{
 :root{
   --default-heading-font: headfont ; 
 }
+
 if headfont != 'Inherit' {
   h1 , h2 , h3 , h4 , h5 , h6 {
     font-family: var(--default-heading-font), system-ui, -apple-system, sans-serif !important;
