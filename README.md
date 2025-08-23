@@ -32,7 +32,8 @@ The style automatically applies to grok.com domain.
 ### TODO : 
 - tables 
 - Change Code colors 
-- (fix) : padding of message bubbles change them 
+
+- expplain why code colors suck 
 
 ## Screenshots
 
