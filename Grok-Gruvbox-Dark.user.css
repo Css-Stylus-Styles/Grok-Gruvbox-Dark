@@ -855,27 +855,19 @@ code {
 
 
 .hljs-function {
-  color: var(--faded-blue) !important;
+  color: var(--faded-red) !important;
   font-weight: bold !important;
   font-size: 0.93rem !important;
 }
 .hljs-class {
-  color: var(--faded-yellow) !important;
+  color: var(--faded-green) !important;
   font-weight: bold !important;
   font-size: 0.93rem !important;
 } 
 
-code:not(span) {
-  color: var(--faded-red) !important;
-  font-size: 1rem !important;
-}
-
-code >span:not(span) {
-color : var(--faded-red) !important ; 
-}
 
 code>span>span{
-color : var(--faded-green) !important  
+color : var(--text-offwhite-faded) !important  
 font-size : 0.93rem !important ; 
 font-weight : 600 !important;
 } 
@@ -895,14 +887,17 @@ code >span >span[style*="font-style: italic"] {
 }
 
 code > span > span [style*="color:"] {
-  color: var(--light-dim-yellow)  !important;
+  color: var(--faded-green)  !important;
   font-weight: 700 !important;
  font-family: var(--font-Jetbrains) !important; 
  font-size : 0.9rem !important ;
   text-decoration: none  !important;
 }
 
-
+code:not(span) {
+  color: var(--faded-green) !important;
+  font-size: 1rem !important;
+}
 /* 
 code >span >span[style*="font-style: italic"] {
   
