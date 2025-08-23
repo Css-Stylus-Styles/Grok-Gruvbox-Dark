@@ -887,7 +887,7 @@ code >span >span[style*="font-style: italic"] {
 }
 
 code > span > span [style*="color:"] {
-  color: var(--faded-green)  !important;
+  color: var(--text-offyellowish)  !important;
   font-weight: 700 !important;
  font-family: var(--font-Jetbrains) !important; 
  font-size : 0.9rem !important ;
