@@ -282,7 +282,7 @@ unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U
 @font-face {
 font-family: "Fantasque Sans Mono";
 src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot");
-src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot?#iefix")format("embedded-opentype"),
+src: url("https:n //db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot?#iefix")format("embedded-opentype"),
 url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff2")format("woff2"),
 url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff")format("woff"),
 url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.ttf")format("truetype"),
@@ -881,36 +881,27 @@ code:not(span) {
   color: #ff6347 !important;
   font-size: 1rem !important;
 }
-code > span > span  {
+code > span > span > span> span {
+  color: #32cd32 !important;
   font-size: 0.93rem !important;
   font-weight: 600 !important;
 }
-code :not(code > span > * ) {
-  color: back  !important;
+code > span > span:not(span > span) {
+  color: #ffffff !important;
   font-size: 0.93rem !important;
   font-weight: 600 !important;
 }
 
 code > span > span:first-child {
-  color : var(--faded-purple) !important ; 
+  color : var(--faded-orange) !important ; 
   border-left: 2px solid #008000 !important;
   padding-left: 5px !important;
 }
+code > span > span:last-child {
+  color :  !important ; 
+    border-right: 2px solid #008000 !important;
+  padding-right: 5px !important;
 
-/* Comments in code    */
-code >span >span[style*="font-style: italic"] {
-  color: var(--text--veryfade)  !important;
-  font-weight: 700 !important;
- font-family: var(--font-Jetbrains) !important; 
- font-size : 0.9rem !important ;
-  text-decoration: none  !important;
-}
-
-/* 
-code >span >span[style*="font-style: italic"] {
-  
-}
- */
 
 
 /*
