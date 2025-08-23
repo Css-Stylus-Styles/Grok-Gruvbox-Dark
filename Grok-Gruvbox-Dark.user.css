@@ -788,15 +788,6 @@ textarea {
 /* CHAT /ANSWER WINDOW */
 
 
-/* user and Chat  bubble padding and background */
-div.message-bubble.rounded-3xl.text-primary.min-h-7{
-  background-color: var(--bg-def-dark) !important;
-  color: var(--text-white) !important;
-  border: 1px solid var(--bg-dark-new) !important;
-  border-radius: 1.5rem !important;
-  padding: 3px 6px !important;
-  box-shadow: 0 2px 5px var(--bg-def-dark) !important;
-}
 
 /* citation button */
 button.citation > button {
@@ -854,12 +845,39 @@ font-weight : 700 !important;
 
 
 
+/* CODE BLOCK STYLE  */
+
+code {
+font-family: $code-font !important;
+font-size: 0.93rem !important;
+font-weight: 600 !important;
+font-style: normal !important;
+
+}
+
+span.hljs-keyword {
+  color: var(--dim-green) !important;
+}
 
 
-
-
-
-
+span.hljs-comment {
+  color: #4682b4 !important;
+}
+span.hljs-class {
+  color: var(--faded-red) !important;
+}
+span.hljs-function {
+  color:  var(--faded-blue) !important;
+}
+span.hljs-string {
+  color: var(--faded-green) !important;
+}
+span.hljs-variable {
+  color: var(--faded-aqua) !important;
+}
+span.hljs-params {
+  color: var(--faded-orange) !important;
+}
 
 
 /*Loading Local Font For Everything*/ 
