@@ -646,16 +646,37 @@ textarea {
 
 /* Model Select Button */
 button#model-select-trigger {
-  background-color: var(--bg0-dh) !important;
+  background-color: var(--bg-dark-new) !important;
   color: var(--dim-green) !important;
-  border: none !important;
+  border: 1px solid var(--bg2-dark) !important;
+  border-radius: 9999px !important;
+  padding: 0rem 1rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   outline: none !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
   text-rendering: optimizeLegibility !important;
+  
+  &:hover {
+    color: var(--faded-green) !important;
+    background: var(--bg-dark-new) !important;
+    border-color: var(--text--faded) !important;
+    border: 1px solid var(--text--faded) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    padding: 0rem 1.2rem !important;
+  }
+  
+  &:focus-visible {
+    outline: 2px solid var(--dim-green) !important;
+    outline-offset: 2px !important;
+  }
 }
 
-/* Pill Buttons */
+/* Pill Buttons HOme page Create image , deep research , and more */
 button.inline-flex,
 button[data-slot="button"].inline-flex {
   color: var(--text--faded) !important;
@@ -694,7 +715,12 @@ button[data-slot="button"].inline-flex {
   }
 }
 
-/* File */
+
+/* Deep Research button selected in the input bar */
+
+
+
+/* File  UPLOAD icon on the input bar */
   div.absolute.bg-background.w-full.max-w-breakout.transition-opacity.opacity-100 > ul.pb-2.overflow-hidden.bg-background.min-h-36 > li {
     color: var(--text-white) !important; 
     border-radius: 0.75rem !important;
