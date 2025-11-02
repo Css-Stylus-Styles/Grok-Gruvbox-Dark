@@ -646,14 +646,61 @@ textarea {
 
 /* Model Select Button */
 button#model-select-trigger {
-  background-color: var(--bg-dark-new) !important;
-  color: var(--text-offwhite-faded) !important;
+  background-color: var(--bg0-dh) !important;
+  color: var(--dim-green) !important;
   border: none !important;
   outline: none !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
   text-rendering: optimizeLegibility !important;
 }
+
+/* Pill Buttons */
+button.inline-flex,
+button[data-slot="button"].inline-flex {
+  color: var(--text--faded) !important;
+  background: var(--bg-dark-new) !important;
+  border: 1px solid var(--bg2-dark) !important;
+  border-radius: 9999px !important;
+  padding: 0rem 1.25rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  
+  /* Nested paragraph styles */
+  p {
+    color: inherit !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font: inherit !important;
+  }
+  
+  /* Hover & Active States */
+  &:hover {
+    color: var(--faded-green) !important;
+    background: var(--bg-dark-new) !important;
+    border-color: var(--text--faded) !important;
+    border: 1px solid var(--text--faded) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    padding: 0rem 1.9rem !important;
+  }
+  
+  /* Focus State */
+  &:focus-visible {
+    outline: 2px solid var(--dim-green) !important;
+    outline-offset: 2px !important;
+  }
+}
+
+/* File */
+  div.absolute.bg-background.w-full.max-w-breakout.transition-opacity.opacity-100 > ul.pb-2.overflow-hidden.bg-background.min-h-36 > li {
+    color: var(--text-white) !important; 
+    border-radius: 0.75rem !important;
+    margin-bottom: 0.5rem !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  } 
 
 /* File */
   div.absolute.bg-background.w-full.max-w-breakout.transition-opacity.opacity-100 > ul.pb-2.overflow-hidden.bg-background.min-h-36 > li {
@@ -713,7 +760,7 @@ text-rendering: optimizeLegibility !important;
   background-color: var(--bg-def-dark) !important;
   color: var(--faded-aqua) !important;
   padding: 0rem 0.75rem !important;
-  border: solid 0.12em var(--bg4-dark) !important ; 
+  border: solid 0.12em var(--bg4-dark) !important;
  transition: padding 0.3s ease-in !important; 
 }
 }
