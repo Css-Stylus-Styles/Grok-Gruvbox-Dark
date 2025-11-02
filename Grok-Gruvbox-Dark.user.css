@@ -617,8 +617,20 @@ CHAT HISTORY PROJECTS AND SO ON */
 
 
 /* See all and Other secondary text on the Front page  */
-.text-secondary {
-  color: var(--dim-orange) !important ; 
+
+
+/* Secondary text in the sidebar, e.g., "Quick responses" */
+span.text-xs.text-secondary.line-clamp-1 {
+  color: var(--faded-orange) !important;
+  font-family: inherit !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+/* Ensure font is inherited for the parent container of the menu item text */
+.flex.flex-col.items-start, div[role="menu"] {
+  font-family: inherit !important;
 }
 
 
@@ -631,6 +643,17 @@ textarea {
   -moz-osx-font-smoothing: grayscale !important;
   text-rendering: optimizeLegibility !important;
   }
+
+/* Model Select Button */
+button#model-select-trigger {
+  background-color: var(--bg-dark-new) !important;
+  color: var(--text-offwhite-faded) !important;
+  border: none !important;
+  outline: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
 
 /* File */
   div.absolute.bg-background.w-full.max-w-breakout.transition-opacity.opacity-100 > ul.pb-2.overflow-hidden.bg-background.min-h-36 > li {
@@ -774,11 +797,11 @@ font-family : "Tiempos Text Regular" !important
 
 
 
-/*Hide Grok Logo*/ 
+/*Hide Grok Logo*/
 /*Front page Logo*/
 if noLogo {
-    div[class*="max-w-breakout"] > svg {
-      opacity: 0 !important;
+    div[class*="max-w-breakout"] > div > svg {
+      display: none !important;
     }
 }
 
@@ -788,6 +811,7 @@ if noSideHeader{
       display: none !important;
     }
 }
+
 
 
     /*Hide Private Chat button   */
