@@ -517,7 +517,7 @@ html , body {
 div.query-bar {
   background-color: var(--bg-dark-new) !important;
   border: 3px solid var(--bg3-dark) !important;
-  border-radius: 55px !important;
+  border-radius: 15px !important;
   box-shadow: 5px 5px 5px var(--bg-dark) !important;
 }
 
@@ -716,25 +716,48 @@ button[data-slot="button"].inline-flex {
 }
 
 
-/* Deep Research button selected in the input bar */
+/* Deep Research text */
+.w-full.ps-4.pe-2 > div > div > div > span {
+  color: var(--text--faded) !important;
+  font-weight: 500 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
 
-
-
-/* File  UPLOAD icon on the input bar */
-  div.absolute.bg-background.w-full.max-w-breakout.transition-opacity.opacity-100 > ul.pb-2.overflow-hidden.bg-background.min-h-36 > li {
-    color: var(--text-white) !important; 
-    border-radius: 0.75rem !important;
-    margin-bottom: 0.5rem !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-  } 
-
-/* File */
-  div.absolute.bg-background.w-full.max-w-breakout.transition-opacity.opacity-100 > ul.pb-2.overflow-hidden.bg-background.min-h-36 > li {
-    color: var(--text-white) !important; 
-    border-radius: 0.75rem !important;
-    margin-bottom: 0.5rem !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-  } 
+.deep-search-chip {
+  background-color: var(--bg-dark-new) !important;
+  border: 1px solid var(--bg2-dark) !important;
+  color: var(--text--faded) !important;
+  border-radius: 12px !important;
+  padding: 0.5rem 1rem !important;
+  height: auto !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  
+  &:hover {
+    background: var(--bg-dark-new) !important;
+    border-color: var(--text--faded) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+  }
+  
+  .lucide-microscope {
+    color: var(--faded-green) !important;
+    width: 20px !important;
+    height: 20px !important;
+  }
+  
+  button[data-slot="button"] {
+    background: var(--bg-dark-new) !important;
+    border: 1px solid var(--bg2-dark) !important;
+    color: var(--text--faded) !important;
+    transition: all 0.2s ease !important;
+    
+    &:hover {
+      background: var(--bg-dark-new) !important;
+      color: var(--faded-green) !important;
+    }
+  }
+}
 
 
 
