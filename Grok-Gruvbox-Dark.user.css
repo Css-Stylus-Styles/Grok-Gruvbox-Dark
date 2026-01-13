@@ -901,6 +901,11 @@ if noLogo {
     }
 }
 
+/* Sidebar background */
+.bg-sidebar {
+    background-color: var(--bg-def-dark) !important; /* Gruvbox dark background color */
+}
+
 /* Hide the Side bar header */
 if noSideHeader{
     div[data-sidebar="header"] {
