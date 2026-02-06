@@ -360,7 +360,7 @@ higher values for hard  */
 
 --shadow-bg:         #1d1b1a;
 /* Was picked from the side bar on grok interface  */
---bg-def-dark:#171718; 
+--bg-def-dark:#171718;
 
 --bg1-dark:       #3c3836;
 --bg-dark:        #282828;
@@ -500,7 +500,7 @@ higher values for hard  */
 }
 
 /* Putting Variables for the most used fonts */
-$heading-font = Bricoalge Grotesque Variable 
+$heading-font = Bricoalge Grotesque Variable
 $sans-serif = Geist Sans
 $code-font = Geist Mono
 
@@ -585,8 +585,8 @@ h4 , h5 , h6 {
 
 /* SVG colors  */
 svg  {
-  color: var(--faded-green) !important; 
-  stroke-width: 3px !important; 
+  color: var(--faded-green) !important;
+  stroke-width: 3px !important;
 }
 
 
@@ -599,14 +599,14 @@ span.space-x-1.align-baseline > span {
 
 /* Chat History Titles color   */
 span.flex-1{
-color : var(--text--faded) !important; 
+color : var(--text--faded) !important;
 font-size: 0.9rem !important;
 }
 
-/* Side elements other then the older chat history  
+/* Side elements other then the older chat history
 CHAT HISTORY PROJECTS AND SO ON */
 .group.flex.flex-col.justify-center.rounded-full.focus\:outline-none.focus-visible\:outline-none.focus-visible\:ring-1.focus-visible\:ring-ring {
-  color :var(--text-white) !important ; 
+  color :var(--text-white) !important ;
   font-size: 0.9rem !important;
 }
 
@@ -659,7 +659,7 @@ button#model-select-trigger {
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
   text-rendering: optimizeLegibility !important;
-  
+
   &:hover {
     color: var(--faded-green) !important;
     background: var(--bg-dark-new) !important;
@@ -667,9 +667,9 @@ button#model-select-trigger {
     border: 1px solid var(--text--faded) !important;
     transform: translateY(-1px) !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
-    padding: 0rem 1.2rem !important;
+    padding: 0rem 1rem !important;
   }
-  
+
   &:focus-visible {
     outline: 2px solid var(--dim-green) !important;
     outline-offset: 2px !important;
@@ -688,7 +688,7 @@ button[data-slot="button"].inline-flex {
   font-weight: 500 !important;
   cursor: pointer !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  
+
   /* Nested paragraph styles */
   p {
     color: inherit !important;
@@ -696,18 +696,18 @@ button[data-slot="button"].inline-flex {
     padding: 0 !important;
     font: inherit !important;
   }
-  
+
   /* Hover & Active States */
   &:hover {
     color: var(--faded-green) !important;
-    background: var(--bg-dark-new) !important;
+    background: var(--bg-def-dark) !important;
     border-color: var(--text--faded) !important;
-    border: 1px solid var(--text--faded) !important;
+    border: 0.16em solid var(--text--faded) !important;
     transform: translateY(-1px) !important;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
-    padding: 0rem 1.9rem !important;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.1) !important;
+    padding: 0rem 1.25rem !important;
   }
-  
+
   /* Focus State */
   &:focus-visible {
     outline: 2px solid var(--dim-green) !important;
@@ -733,25 +733,25 @@ button[data-slot="button"].inline-flex {
   padding: 0.5rem 1rem !important;
   height: auto !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  
+
   &:hover {
     background: var(--bg-dark-new) !important;
     border-color: var(--text--faded) !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
   }
-  
+
   .lucide-microscope {
     color: var(--faded-green) !important;
     width: 20px !important;
     height: 20px !important;
   }
-  
+
   button[data-slot="button"] {
     background: var(--bg-dark-new) !important;
     border: 1px solid var(--bg2-dark) !important;
     color: var(--text--faded) !important;
     transition: all 0.2s ease !important;
-    
+
     &:hover {
       background: var(--bg-dark-new) !important;
       color: var(--faded-green) !important;
@@ -767,23 +767,23 @@ button[data-slot="button"].inline-flex {
 button.citation > button {
   background-color: var(--bg-dark-new) !important;
   color: var(--faded-green) !important;
-  padding : 0.5rem 0.5rem !important ; 
+  padding : 0.5rem 0.5rem !important ;
   border: solid 1px var(--bg2-dark) !important;
   font-size: 0.72rem !important;
   font-style:normal !important;
 
   &:hover {
-    background-color: var(--bg-def-dark) !important;
-    color: var(--text-offwhite-faded) !important;
-    font-style:italic !important;
-    padding: 0.65rem 0.6rem !important;
-    font-size: 0.83rem !important;
-    border: solid 0.22em var(--dark-green) !important ; 
-   transition: padding 0.3s ease-in !important; 
+    BACKGROUND-COLOR: VAR(--BG-DEF-DARK) !IMPORTANT;
+    COLOR: VAR(--TEXT-OFFWHITE-FADED) !IMPORTANT;
+    FONT-STYLE:ITALIC !IMPORTANT;
+    PADDING: 0.65REM 0.6REM !IMPORTANT;
+    FONT-SIZE: 0.83REM !IMPORTANT;
+    BORDER: SOLID 0.22EM VAR(--DARK-GREEN) !IMPORTANT ;
+   TRANSITION: PADDING 0.3S EASE-IN !IMPORTANT;
   }
 }
 
-  /* ANSWER / CHAT  PAGE  */
+  /* ANSWEr / CHAT  PAGE  */
 /* removing the top gradient  */
 .via-background {
   --tw-gradient-to: none !important;
@@ -810,7 +810,7 @@ text-rendering: optimizeLegibility !important;
   color: var(--faded-aqua) !important;
   padding: 0rem 0.75rem !important;
   border: solid 0.12em var(--bg4-dark) !important;
- transition: padding 0.3s ease-in !important; 
+ transition: padding 0.3s ease-in !important;
 }
 }
 
@@ -818,7 +818,7 @@ text-rendering: optimizeLegibility !important;
 /* Most of this is broken  */
 code {
   font-family: $code-font !important;
-  font-size : 0.93rem !important ; 
+  font-size : 0.93rem !important ;
   font-weight : 600 !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
@@ -835,16 +835,16 @@ code {
   color: var(--faded-green) !important;
   font-weight: bold !important;
   font-size: 0.93rem !important;
-} 
+}
 
 code>span>span{
-color : var(--text-offwhite-faded) !important  
-font-size : 0.93rem !important ; 
+color : var(--text-offwhite-faded) !important
+font-size : 0.93rem !important ;
 font-weight : 600 !important;
-} 
+}
 
 code > span > span:first-child {
-  color : var(--faded-purple) !important ; 
+  color : var(--faded-purple) !important ;
   padding-left: 5px !important;
 }
 
@@ -852,7 +852,7 @@ code > span > span:first-child {
 code >span >span[style*="font-style: italic"] {
   color: var(--text--veryfade)  !important;
   font-weight: 700 !important;
- font-family: var(--font-Jetbrains) !important; 
+ font-family: var(--font-Jetbrains) !important;
  font-size : 0.9rem !important ;
   text-decoration: none  !important;
 }
@@ -861,7 +861,7 @@ code >span >span[style*="font-style: italic"] {
 code > span > span [style*="color:"] {
   color: var(--text-offyellowish)  !important;
   font-weight: 700 !important;
- font-family: var(--font-Jetbrains) !important; 
+ font-family: var(--font-Jetbrains) !important;
  font-size : 0.9rem !important ;
   text-decoration: none  !important;
 }
@@ -872,15 +872,15 @@ code:not(span) {
 }
 
 /* This is just a template  */
-/* 
+/*
 code >span >span[style*="font-style: italic"] {
 }
  */
 
 
- 
- 
- 
+
+
+
 /*
 Loading Fonts from the web for  this
 */
@@ -929,7 +929,7 @@ if noSideHeader{
 /* if you select inherit then it will use the default font and just make it bold and appear as heading  */
 /* new font in else was defined in the function down below based on the text font drop down  */
 :root{
-  --default-heading-font: headfont ; 
+  --default-heading-font: headfont ;
 }
 
 if headfont != 'Inherit' {
@@ -970,7 +970,3 @@ if newfont != 'Website Default' {
 
 
 }
-
-
-
-
